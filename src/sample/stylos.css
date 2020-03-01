@@ -1,0 +1,18 @@
+.hoverHand{
+
+}
+
+.hoverBtnColor:hover{
+    -fx-background-color: dodgerblue;
+    -fx-cursor: hand;
+}
+
+.hoverBtnColor{
+    -fx-background-color: transparent;
+}
+
+.borderWhite{
+    -fx-border-color: white;
+    -fx-border-radius: 10px;
+    -fx-background-color: transparent;
+}

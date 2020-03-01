@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="453.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e2.e2">
+   <children>
+      <AnchorPane prefHeight="453.0" prefWidth="343.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="347.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="tablaVehiculos" layoutX="15.0" layoutY="185.0" onMouseClicked="#getSelectedAuto" prefHeight="259.0" prefWidth="309.0">
+              <columns>
+                <TableColumn fx:id="tcAuto" prefWidth="154.00001525878906" text="Auto" />
+                <TableColumn fx:id="tcAño" prefWidth="154.0" text="Año" />
+              </columns>
+            </TableView>
+            <AnchorPane layoutX="15.0" layoutY="67.0" prefHeight="110.0" prefWidth="309.0" style="-fx-border-color: white; -fx-background-color: black; -fx-border-radius: 10px;">
+               <children>
+                  <TextField fx:id="auto" layoutX="92.0" layoutY="14.0" />
+                  <Button fx:id="btnAgregarAuto" layoutX="218.0" layoutY="77.0" mnemonicParsing="false" onAction="#agregarVehiculo" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #4CAF50;" text="Agregar" textFill="WHITE" />
+                  <Spinner fx:id="año" editable="true" layoutX="92.0" layoutY="43.0" />
+                  <Label layoutX="14.0" layoutY="18.0" text="Auto" textFill="WHITE" />
+                  <Label layoutX="14.0" layoutY="47.0" text="Año" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="tituloAuto" prefHeight="58.0" prefWidth="343.0" style="-fx-background-color: #E91E63;">
+               <children>
+                  <Label layoutX="145.0" layoutY="16.0" text="AUTOS" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="343.0" prefHeight="458.0" prefWidth="343.0">
+         <children>
+            <TableView fx:id="tablaRenta" layoutX="17.0" layoutY="185.0" prefHeight="259.0" prefWidth="309.0">
+               <columns>
+                  <TableColumn fx:id="tcid" prefWidth="66.0" text="Renta nº" />
+                  <TableColumn fx:id="tcautoRenta" prefWidth="126.0" text="Auto" />
+                  <TableColumn fx:id="tcfechaRenta" prefWidth="116.0" text="Fecha" />
+               </columns>
+            </TableView>
+            <DatePicker fx:id="fecha" layoutX="191.0" layoutY="108.0" prefHeight="25.0" prefWidth="135.0" />
+            <Label layoutX="57.0" layoutY="75.0" text="Auto a alquilar:" />
+            <Label fx:id="autoSeleccionado" layoutX="159.0" layoutY="70.0" prefHeight="21.0" prefWidth="123.0" text="no seleccinado">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="57.0" layoutY="112.0" text="Fecha de alquier" />
+            <AnchorPane fx:id="tituloRenta" prefHeight="58.0" prefWidth="343.0" style="-fx-background-color: #9C27B0;">
+               <children>
+                  <Label layoutX="134.0" layoutY="16.0" text="ALQUILER" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnAgregarRenta" layoutX="220.0" layoutY="146.0" mnemonicParsing="false" onAction="#agregarRenta" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #4CAF50;" text="Agregar" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

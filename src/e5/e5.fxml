@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e5.e5">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="15.0" prefHeight="371.0" prefWidth="570.0" style="-fx-border-color: black; -fx-border-radius: 10px;">
+         <children>
+            <Label layoutX="100.0" layoutY="22.0" text="CLASIFICACION DE FRACCIONES" textFill="#7c7171">
+               <font>
+                  <Font name="Arial" size="23.0" />
+               </font>
+            </Label>
+            <Spinner fx:id="spNumerador" editable="true" layoutX="54.0" layoutY="131.0" prefHeight="25.0" prefWidth="112.0" />
+            <Spinner fx:id="spDividendo" editable="true" layoutX="54.0" layoutY="215.0" prefHeight="25.0" prefWidth="112.0" />
+            <Line endX="74.0" layoutX="123.0" layoutY="185.0" startX="-100.0" />
+            <Label layoutX="251.0" layoutY="153.0" prefHeight="64.0" prefWidth="35.0" text="=" textFill="#7c7171">
+               <font>
+                  <Font name="Arial" size="56.0" />
+               </font>
+            </Label>
+            <Button fx:id="btVerificar" layoutX="260.0" layoutY="297.0" mnemonicParsing="false" onAction="#evaluarFraccion" style="-fx-background-color: #4CAF50;" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblRespuesta" layoutX="348.0" layoutY="172.0" text="RESPUESTA" textFill="#7c7171" wrapText="true">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

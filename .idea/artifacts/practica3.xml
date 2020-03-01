@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="practica3">
+    <output-path>$PROJECT_DIR$/out/artifacts/practica3</output-path>
+    <root id="root">
+      <element id="archive" name="practica3.jar">
+        <element id="module-output" name="practica3" />
+      </element>
+    </root>
+  </artifact>
+</component>

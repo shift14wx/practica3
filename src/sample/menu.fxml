@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="476.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.menuControler">
+   <top>
+      <HBox fx:id="titleBar" alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="600.0" style="-fx-background-color: #db504a;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <Circle fill="DODGERBLUE" onMousePressed="#min" radius="8.0" stroke="BLACK" strokeType="INSIDE">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Circle>
+            <Circle layoutX="597.0" layoutY="23.0" onMouseClicked="#close" radius="8.0" stroke="BLACK" strokeType="INSIDE">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="RED" />
+                        <Stop color="#cd3131" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Circle>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <GridPane fx:id="grid" prefHeight="390.0" prefWidth="665.0" style="-fx-background-color: linear-gradient(to right, #ff512f, #f09819);;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="b6" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#close" prefHeight="120.0" prefWidth="300.0" styleClass="hoverBtnColor" text="CERRAR" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button fx:id="b2" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" onAction="#openE2" prefHeight="120.0" prefWidth="300.0" styleClass="hoverBtnColor" text="EJERCICIO # 2" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="b4" alignment="CENTER" contentDisplay="CENTER" layoutX="310.0" layoutY="11.0" mnemonicParsing="false" onAction="#openE4" prefHeight="120.0" prefWidth="300.0" styleClass="hoverBtnColor" text="EJERCICIO # 4" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="b5" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="132.0" mnemonicParsing="false" onAction="#openE5" prefHeight="120.0" prefWidth="300.0" styleClass="hoverBtnColor" text="EJERCICIO # 5" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="b3" alignment="CENTER" contentDisplay="CENTER" layoutX="310.0" layoutY="132.0" mnemonicParsing="false" onAction="#openE3" prefHeight="120.0" prefWidth="300.0" styleClass="hoverBtnColor" text="EJERCICIO # 3" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="b1" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="132.0" mnemonicParsing="false" onAction="#openE1" prefHeight="120.0" prefWidth="300.0" styleClass="hoverBtnColor" text="EJERCICIO # 1 " textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
